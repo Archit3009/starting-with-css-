@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./question1.css">
+    <style>
+    .college .firyear .boy{ 
+             color: aqua;   /*inline calling*/
+
+        }
+        /* calling via tag name */
+         h1{
+            font-size: large;
+         }
+         .college .secyear .g{
+            color: brown;
+         }
+  </style>
+</head>
+<body>
+    <div class="college">
+        <div class="firyear" >
+             <div class="b" style="color: blue;"> <!-- internal calling -->
+             <h1 class="b" style="color: bisque;" >boys</h1>   <!--inline calling -->
+            <h1 class="b" style="color: bisque;">boys</h1>
+            <h1 class="b">boys</h1>  </div>
+            <div class="g" style="font-size: small; color: palevioletred;">
+           <h1 class="g">girls</h1>
+           <h1 class="g">girls</h1>
+           <h1 class="g">girls</h1> </div>
+        </div>
+        <div class="secyear">
+             <h1 class="b" >boys</h1>
+             <h1 class="b">boys</h1>
+             <h1 class="b">boys</h1>
+             <h1 class="g" style="color: blueviolet;">girls</h1> <!--we have called the girls inline internal and external also out of which internal css won and got displayed -->
+             <h1 class="g">girls</h1>       
+             <h1 class="g">girls</h1>     
+        </div>
+    </div>
+<p>
+    when we target the same element by different method like inline internal or
+</p>
+</body>
+</html>
